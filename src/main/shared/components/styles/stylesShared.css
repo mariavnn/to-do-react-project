@@ -1,0 +1,6 @@
+.emptyTodos-text{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin: 9rem 2rem ;
+}

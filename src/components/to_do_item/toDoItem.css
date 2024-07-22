@@ -1,0 +1,48 @@
+@import url('/src/main/main.css');
+
+.to-do-item{
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 32rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color-text);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: var(--text-font);
+    font-weight: var(--text-weight);
+}
+
+.Icon-check{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.Icon-check:hover{
+    fill: var(--green);
+    transform: scale(1.2);
+}
+
+.Icon-check--completed{
+    fill:  var(--green);
+}
+
+.delete-icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.delete-icon:hover{
+    fill: var(--red);
+    transform: scale(1.2);
+}
+
+.ToDoItem-p--completed{
+    text-decoration: line-through;
+}
+
+.ToDoItem-p{
+    margin: 0 .5rem 0 1.2rem;
+}

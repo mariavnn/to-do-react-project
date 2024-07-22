@@ -1,0 +1,30 @@
+@import url('/src/main/main.css');
+
+.main-container{
+    margin-left: 6rem;
+    font-family:  var(--text-font);
+    font-weight: var(--text-weight);
+    display: block;
+    font-size: 1.7rem;
+}
+
+.first-container{
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.task-text{
+    color: var(--secondary-color);
+}
+
+h1{
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .main-container{
+        margin-left: 2rem;
+    }    
+}

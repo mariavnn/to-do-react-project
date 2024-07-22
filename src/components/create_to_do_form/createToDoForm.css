@@ -1,0 +1,123 @@
+.create-to-do-container{
+    background-color: #FFFFFF;
+    width: 35vw;
+    height: 40vh;
+    border-radius: 10px;
+    border: .1rem solid var(--secondary-color-text);
+    font-family: var(--text-font);
+    color: black;
+    padding: 1rem 2.5rem;
+}
+
+.input-container{
+    padding: .5rem 0;
+    width: 31vw;
+    margin-top: 1rem;
+}
+
+.input-title{
+    font-size: 1.6rem;
+    margin: 0 0 .6rem 0;
+    font-weight: bold;
+}
+
+.input-text{
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-background);
+    border-radius: 10px;
+    border: .2rem solid var(--secondary-background);
+    outline-color: var(--secondary-color-text);
+    font-family: var(--text-font);
+    font-size: 1.7rem;
+}
+
+.input-text.error{
+    border: .2rem solid var(--red);
+    outline: var(--red);
+}
+textarea{
+    padding: .8rem 0 0 .9rem;
+}
+textarea::placeholder{
+   font-size: 15px;
+   font-weight: bold;
+}
+
+
+.carac-text-container{
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.carac-text-container.error{
+    justify-content: space-between;
+}
+
+.carac-text{
+    display: flex;
+    justify-content: flex-end;
+    color: var(--secondary-color-text);
+}
+
+.error-message{
+    width: 50%;
+    color: var(--red);
+}
+
+
+.carac-text.error{
+    color: var(--red);
+}
+
+.save-btn-container{
+    margin: 1rem 0; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.save-btn{
+    margin: 0;
+    padding: 0.5rem 0.3rem;
+    gap: 0.5em;
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    border: 0.5rem solid var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: var(--text-weight);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.exit-icon-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exit-icon-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.exit-icon{
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 767px){
+    .create-to-do-container{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .input-container{
+        width: 100%;
+    }
+}

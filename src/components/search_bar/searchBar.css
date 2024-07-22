@@ -1,0 +1,45 @@
+@import url('/src/main/main.css');
+
+.search-container{
+    height: 35px;
+    border: 0.1rem solid  var(--secondary-color-text);
+    border-radius: 15px;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-icon-container{
+    width: 10%;
+    padding: .4rem 0 0 .9rem;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--secondary-color-text);
+}
+
+.search-input{
+    background-color: none;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 1.5rem;
+    outline-color: var(--secondary-background);
+}
+
+.search-input::placeholder{
+    color: var(--secondary-color-text);
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .search-container{
+        margin-top: 1rem;
+    }
+    
+}

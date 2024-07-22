@@ -1,0 +1,153 @@
+:root{ 
+    --primary-color: #FFFFFF;
+    --secondary-color: #0059FF;
+    --secondary-color-rbg: #0059ff96;
+    --terciary-color: #FF651E;
+    --terciary-color-rbg: #ff651e80;
+    --quarteary-color: #F5A801;
+    --quarteary-color-rbg: #f5a80183;
+    --primary-background: #ebebeb;
+    --secondary-background: #D9D9D9;
+
+    --secondary-color-text: #B7B7B7;
+    --text-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --text-weight: bold;
+
+    --red: rgb(217, 17, 17);
+    --green: #4CAF50;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%; /*Se usa para que las medidas en rem sea igual a px, es decir 10rem = 10px*/
+}
+
+.first-section{
+    height: 25vh;
+    margin: 0;
+    padding: 4rem;
+    background-color: var(--primary-background);
+}
+
+.second-section{
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: var(--text-font);
+}
+
+.custom-shape-divider{
+    height: 12vh;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-shape-divider .shape-fill {
+    margin: 0;
+    padding: 0;
+    fill: var(--primary-background);
+}
+
+.second-section .first-child{
+    width: 40vw;
+    height: 80%;
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: center;
+}
+
+
+.second-section .second-child{
+    width: 60vw;
+    height: 80%;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+}
+
+.progress-container{
+    height: 58%;
+    padding-left: 20rem;
+}
+
+
+.to-do-container{
+    margin:  2rem 0 ;
+    border: 0.1rem solid var(--secondary-color-text);
+    border-radius: 20px;
+    width: 38rem;
+    height:  460px;
+    padding: 1rem 1.5rem;
+}
+
+
+
+.todo-button-container{
+    margin-right: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.status-container p{
+    margin-bottom: 1.8rem;
+}
+
+.status-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+  
+.status-btn-container {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+  
+
+@media (max-width: 767px) {
+    html{
+        font-size: 50%; /* Ajustar tamaño de fuente para móviles */
+    }
+
+    .custom-shape-divider{
+        height: 8vh;
+    }
+
+    .first-section{
+        display: flex;
+        padding: 3rem;
+        padding-top: 6rem;
+        justify-content: start;
+    }
+
+    .second-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .progress-container {
+        display: none; 
+    }
+
+    .second-section .first-child{
+        order: 2;
+        padding: 0 3rem;
+        width: 100vw;
+    }
+
+    .to-do-container{
+        width: 500px;
+    }
+
+    .second-child{
+        order: 1;
+    }
+}

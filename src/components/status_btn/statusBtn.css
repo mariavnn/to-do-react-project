@@ -1,0 +1,75 @@
+@import url('/src/main/main.css');
+
+.status-btn{
+    display: flex;
+    border-radius: 20px;
+    border: none;
+    padding: 0.3rem;
+    width: 130px;
+    height: 60px;
+    
+}
+
+.status-btn:nth-child(1) {
+    margin-right: 50px;
+    background-color: var( --terciary-color-rbg)/* Total */
+}
+  
+.status-btn:nth-child(2) {
+    background-color: var(--quarteary-color-rbg); /* On-going */
+}
+  
+.status-btn:nth-child(3) {
+    background-color: var(--secondary-color-rbg)/* Completed */
+}
+
+.divider{
+    margin: .3rem .8rem 0 .7rem;
+    width: 6px;
+    height: 46px;
+    border-radius: 10px;
+}
+
+.status-btn:nth-child(1) .divider{
+    background-color: var(--terciary-color);
+}
+
+.status-btn:nth-child(2) .divider{
+    background-color: var(--quarteary-color);
+}
+
+.status-btn:nth-child(3) .divider{
+    background-color: var(--secondary-color);
+}
+
+.button-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+}
+
+.button-text h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-text p{
+    display: flex;
+    align-self: flex-start;
+    margin: .2rem;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--terciary-color);
+}
+
+.status-btn:nth-child(1) .button-text p{
+    color: var(--terciary-color);
+}
+
+.status-btn:nth-child(2) .button-text p{
+    color: var(--quarteary-color);
+}
+
+.status-btn:nth-child(3) .button-text p{
+    color: var(--secondary-color);
+}
